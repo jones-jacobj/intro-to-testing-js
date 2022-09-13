@@ -19,5 +19,5 @@ function isEven(num){
 }
 
 function isVowel(){
-    return 0;
+    return false;
 }

@@ -82,4 +82,7 @@ describe('isVowel', function(){
     it('should be a defined function', function(){
         expect(typeof isVowel).toBe('function');
     });
+    it('should return a boolean', function(){
+        expect(typeof isVowel()).toBe('boolean');
+    });
 });
