@@ -85,4 +85,13 @@ describe('isVowel', function(){
     it('should return a boolean', function(){
         expect(typeof isVowel()).toBe('boolean');
     });
+    it("should return true if passed 'a'",function(){
+        expect(isVowel('a')).toBe(true);
+    });
+    it("should return true if passed 'A'", function(){
+        expect(isVowel('A')).toBe(true);
+    });
+    it("should return false if passed 'y'", function(){
+        expect(isVowel('y')).toBe(false);
+    });
 });
