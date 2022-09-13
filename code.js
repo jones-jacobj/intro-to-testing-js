@@ -26,3 +26,7 @@ function isVowel(letter){
         return false;
     }
 }
+
+function add(){
+    return 0;
+}
