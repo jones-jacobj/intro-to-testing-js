@@ -94,4 +94,7 @@ describe('isVowel', function(){
     it("should return false if passed 'y'", function(){
         expect(isVowel('y')).toBe(false);
     });
+    it("should return false if passed 4",function(){
+        expect(isVowel(4)).toBe(false);
+    });
 });
