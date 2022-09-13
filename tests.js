@@ -121,4 +121,7 @@ describe("add",function(){
     it('should return 5 when given 2+3',function(){
         expect(add(2,3)).toBe(5);
     });
+    it('should return -12 when given -3, -9', function(){
+        expect(add(-3,-9)).toBe(-12);
+    })
 });

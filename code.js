@@ -28,5 +28,5 @@ function isVowel(letter){
 }
 
 function add(num1, num2){
-    return 5;
+    return num1+num2;
 }
