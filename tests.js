@@ -116,6 +116,9 @@ describe("add",function(){
         expect(typeof add).toBe('function');
     });
     it('should return a number', function(){
-        expect(typeof add()).toBe('number');
-    })
+        expect(typeof add()).toBe("number");
+    });
+    it('should return 5 when given 2+3',function(){
+        expect(add(2,3)).toBe(5);
+    });
 });
