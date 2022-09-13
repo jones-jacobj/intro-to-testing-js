@@ -100,4 +100,7 @@ describe('isVowel', function(){
     it("should return false if passed true",function(){
         expect(isVowel(true)).toBe(false);
     });
+    it("should return false if passed false", function(){
+        expect(isVowel(false)).toBe(false);
+    });
 });
