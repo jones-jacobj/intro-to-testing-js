@@ -17,3 +17,7 @@ function isEven(num){
     }
     return false;
 }
+
+function isVowel(){
+    return 0;
+}

@@ -77,3 +77,9 @@ describe('isEven', function() {
         expect(isEven(true)).toBe(false);
     });
 });
+
+describe('isVowel', function(){
+    it('should be a defined function', function(){
+        expect(typeof isVowel).toBe('function');
+    });
+});
