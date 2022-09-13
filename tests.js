@@ -33,19 +33,47 @@ describe(
         });
     });
 
-describe ('isFive', function(){
-        it('should be a defined function', function(){
-           expect(typeof isFive).toBe('function');
-        });
-        it('should return a boolean', function(){
-            expect(typeof isFive()).toBe('boolean');
-        });
-        it('should be true if the input is 5', function(){
-            expect(isFive(5)).toBe(true);
-        });
-        it('should be false if the input is 6',function(){
-            expect(isFive(6)).toBe(false);
-        });
+describe ('isFive', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should be true if the input is 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should be false if the input is 6', function () {
+        expect(isFive(6)).toBe(false);
+    });
+});
 
-}
-);
+describe('isEven', function() {
+    it('isEven should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true if passed 2', function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true is -4 is passed', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('returns false when executed with 3', function(){
+        expect(isEven(3)).toBe(false);
+    });
+    it("returns false when 'banana' is passed",function(){
+        expect(isEven('banana')).toBe(false);
+    });
+    it("returns true when 8 is passed",function(){
+        expect(isEven(8)).toBe(true);
+    });
+    it("returns false when Infinity is passed",function(){
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('returns false when booleans input', function(){
+        expect(isEven(true)).toBe(false);
+    });
+});
