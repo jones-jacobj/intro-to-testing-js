@@ -19,6 +19,10 @@ function isEven(num){
 }
 
 function isVowel(letter){
-    if(typeof(letter)=="string"){letter = letter.toLowerCase();}
-    return letter === 'a';
+    if(typeof(letter)=="string"){
+        letter = letter.toLowerCase();
+        return letter === 'a';
+    }else{
+        return false;
+    }
 }
